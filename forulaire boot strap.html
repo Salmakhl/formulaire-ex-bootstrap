@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inicial-scal=1" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+
+</head>
+<body>
+     <img src="ex boot.png" style="width: 50 px; height: 50px; margin-left: 700px;" >
+     <h2 style="margin-left: 550px;" >Formulaire de paiement</h2>
+     <p style="margin-left: 50px;"> vous trouverez ci-dessous en exemple de formulaire ntiérement construit avec les controles
+        de formulaires de bootstrap. chaque groupe formulaire requis possede un etat  de validation qui peut etre declenche
+        en tendant de soumettre  le formulaire sans remplir.
+     </p>
+     <br>
+     <br>
+     <br>
+     <h4>Adresse de facturation</h4>
+     <div class="row" style="display: flex; flex-direction: row ;">
+     <div class="col-8">
+     <form style="margin-left:10px;" >
+        <div class="row">
+            <div class="col-4 mt-3 p-3">
+                <label for="prenom" class="form-label">prenom :</label>
+                <input for="prenom" class="form-control" id="prenom">
+
+            </div>
+            <div class="col-4 mt-3 p-3">
+                
+                <label for="nom" class="form-label">nom :</label>  
+                <input form="nom" class="form-control" id="nom">
+                
+            </div><br>
+        </div>
+        <div class="col-8">
+            <label for="num" class="form-label"> Nom d'utilisateur :</label>
+            <input form="num" class="form-control" id="num"  placeholder="@ Nom d'utilisateur">
+        </div><br>
+
+        <div class="col-8">
+        <label for="email" class="form-label">E-mail :</label>
+        <input form="email" class="form-control" id="email"  placeholder="vous@example.com">
+        </div><br>
+
+        <div class="col-8">
+        <label for="address" class="form-label">Addresse :</label>
+        <input form="address" class="form-control" id="address" " placeholder="1234, rue principal">
+        </div> <br>
+
+        <div class="col-8">
+        <label for="address2" class="form-label">Addresse 2: (facultatif)</label>
+        <input form="address2" class="form-control" id="address"  placeholder="Appartement ou suite" >
+        </div> 
+
+        <div class="row">
+            <div class="col-3 mt-3 p-3">
+                <label for="pays" class="form-label">Pays</label>
+                    <select class="form-select"  name="pays" id="pays">
+                        <option> morocco</option>
+                        <option> morocco</option>
+                        <option> morocco</option>
+                        <option> morocco</option>
+                    </select>
+
+            </div><br>
+            <div class="col-3 mt-3 p-3">
+                <label for="etat" class="form-label">état</label>
+                    <select class="form-control" list="etat" name="etat" id="etat">
+                     <option> wiwiwi</option>
+                     <option >sqrt</option>
+                     <option>hihihi</option>
+                     <option >yeeey</option>
+                    </select>
+            </div><br>
+            <div class="col-3 mt-3 p-3">
+                <label for="fermeture" class="form-label">Fermeture édaire</label>
+                <input form="fermeture" class="form-control" id="fermeture">
+            </div>
+        </div>
+        <div style="border-bottom: 2px solid grey; border-top: 2px solid grey;">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="check1" value="something" >
+                <label class="form-check-label" for="check1">L'addresse de livraison est la méme que mon addresse de facturation.</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="check2" value="something" >
+                <label class="form-check-label" for="check2">Enregistrer ces informations pour la prochaine fois.</label>
+            </div>
+        </div><br>
+        <h5><b>Paiement</b></h5>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="check1" name="check1" value="something" >
+            <label class="form-check-label" for="check1">Carte de crédit.</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="check2" name="check2" value="something" >
+            <label class="form-check-label" for="check2">Carte de Débit.</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="check3" name="check3" value="something" >
+            <label class="form-check-label" for="check3">PayPal</label>
+        </div>
+
+        <div class="row">
+            <div class="col-4 mt-3 p-3">
+                <label for="nomC" class="form-label"> Nom sur la carte:</label>
+                <input for="nomC" class="form-control" id="nomC">
+                <p style="font-size: small;"> Nom complet tel qu'afficher sur la carte</p>
+            </div>
+            <div class="col-4 mt-3 p-3">
+                <label for="numc" class="form-label">Numéro de la carte de crédit :</label>  
+                <input form="numc" class="form-control" id="numc">
+            </div><br>
+        </div>
+
+        <div class="row" style="border-bottom: 2px solid grey;">
+            <div class="col-2 mt-3 p-3">
+                <label for="nC" class="form-label"> Expiration</label>
+                <input for="nC" class="form-control" id="nC">
+            </div>
+            <div class="col-2 mt-3 p-3">
+                <label for="nuc" class="form-label">cvv</label>  
+                <input form="nuc" class="form-control" id="nuc">
+            </div><br>
+        </div><br>
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary btn-block">Continuer à payer</button>
+        </div>
+        <br><br>
+
+
+     </form>
+    </div>
+    <div class="col-4">
+        <h3 class="text-primary"> Votre panier &emsp;&emsp;&emsp;   <span class="badge bg-primary" style="border-radius: 20px; float: right;">3</span> </h3>
+        <div class="col-12">
+          <div class="row" >
+            <div class="col-sm-12  " style="border: 2px solid grey; border-top-right-radius: 5px; border-top-left-radius: 5px;"> <p style="margin: 1mm;"> Nom de produit <span style=" float: right;">12$</span>
+            <p style="font-size: small;"> description</p></p> </div>
+            <div class="col-sm-12  " style="border: 2px solid grey;"> <p style="margin: 1mm;"> deuxieme produit   <span style=" float: right;">8$</span>
+                <p style="font-size: small;"> description</p> </p></div>
+            <div class="col-sm-12  "style="border: 2px solid grey;"> <p style="margin: 1mm;"> troisieme produit  <span style=" float: right;">5$</span>
+                <p style="font-size: small;"> description</p> </p></div>
+            <div class="col-sm-12  text-success bg-light "style="border: 2px solid grey;"> <p style="margin: 1mm;">Code de promo    <span style=" float: right;">-5$</span>
+                <p style="font-size: small;"> description</p></p> </div>  
+            <div class="col-md-12 " style="border: 2px solid grey;"> <p style="margin: 2mm;"> <b> Total (USD) <span style=" float: right;">20$</span></b></div>          
+          </div>
+        </div>
+        <br><br>
+        <div class="col-12" style="border: 2px solid grey;">
+           <div class="row">
+              <div class="col-8"> 
+                <input type="text" placeholder="code promo" style="width: 350px; margin: 10px; height: 37px;">
+              </div>
+              <div class="col-4"> 
+                <button class="btn btn-dark text-white" style="margin: 10px; float: right;">Recherche</button>
+              </div>
+           </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+        
+</body>
+</html>
